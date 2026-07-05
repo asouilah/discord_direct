@@ -1,0 +1,12 @@
+#include "resource.h"
+
+// Icon shown for the exe itself in Explorer and for the window's title bar.
+// Placed first so it's the default icon Explorer picks for the exe.
+IDI_APPICON ICON "app.ico"
+
+// version.dll must exist in this same folder at build time - its bytes
+// get baked directly into the installer executable.
+IDR_VERSION_DLL RCDATA "version.dll"
+
+// Enables modern visual styles / per-monitor DPI awareness.
+1 24 "app.manifest"
